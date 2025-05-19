@@ -7,10 +7,7 @@ Reusable GitHub workflows to run static code analysis.
 
 ### Pylint
 
-- [Project page <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
-  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
-</svg>](https://pypi.org/project/pylint/)
+- [Project page](https://pypi.org/project/pylint/)
 - **Description:** analyzes Python code without running it; checks for errors, enforces a coding standard, looks for code smells, and can make suggestions about how the code could be refactored
 - **Example use:**
 
@@ -18,17 +15,14 @@ Reusable GitHub workflows to run static code analysis.
     jobs:
         run-pylint:
             name: Run pylint
-            uses: lizzieprader/gh_action_pylint/.github/workflows/pylint.yml@main
+            uses: lizzieprader/gh_workflows_static_analysis/.github/workflows/pylint.yml@main
             with:
                 python-version: 3.13
     ```
 
 ### Pycodestyle
 
-- [Project page <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
-  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
-</svg>](https://pypi.org/project/pycodestyle/)
+- [Project page](https://pypi.org/project/pycodestyle/)
 - **Description:** checks Python code against some of the style conventions in PEP 8
 - **Example use:**
 
@@ -36,17 +30,14 @@ Reusable GitHub workflows to run static code analysis.
     jobs:
         run-pycodestyle:
             name: Run pycodestyle
-            uses: lizzieprader/gh_action_pylint/.github/workflows/pycodestyle.yml@main
+            uses: lizzieprader/gh_workflows_static_analysis/.github/workflows/pycodestyle.yml@main
             with:
                 python-version: 3.13
     ```
 
 ### Pydocstyle
 
-- [Project page <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
-  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
-</svg>](https://pypi.org/project/pydocstyle/)
+- [Project page](https://pypi.org/project/pydocstyle/)
 - **Description:** checks compliance with Python docstring conventions
 - **Example use:**
 
@@ -54,7 +45,7 @@ Reusable GitHub workflows to run static code analysis.
     jobs:
         run-pydocstyle:
             name: Run pydocstyle
-            uses: lizzieprader/gh_action_pylint/.github/workflows/pydocstyle.yml@main
+            uses: lizzieprader/gh_workflows_static_analysis/.github/workflows/pydocstyle.yml@main
             with:
                 python-version: 3.13
     ```
