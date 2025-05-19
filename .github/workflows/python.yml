@@ -1,0 +1,25 @@
+name: Python Static Analysis
+
+on:
+  workflow_call:
+    inputs:
+      python-version:
+        required: true
+        type: string
+
+jobs:
+  run-pylint:
+      name: pylint
+      uses: lizzieprader/gh_workflows_static_analysis/.github/workflows/pylint.yml@main
+      with:
+          python-version: ${{ inputs.python-version }}
+  run-pycodestyle:
+      name: pycodestyle
+      uses: lizzieprader/gh_workflows_static_analysis/.github/workflows/pycodestyle.yml@main
+      with:
+          python-version: ${{ inputs.python-version }}
+  run-pydocstyle:
+      name: pydocstyle
+      uses: lizzieprader/gh_workflows_static_analysis/.github/workflows/pydocstyle.yml@main
+      with:
+          python-version: ${{ inputs.python-version }}

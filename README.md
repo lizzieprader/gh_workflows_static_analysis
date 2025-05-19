@@ -2,8 +2,21 @@
 
 Reusable GitHub workflows to run static code analysis.
 
-
 ## Workflows
+
+### Python
+
+- **Description:** Runs the pylint, pycodestyle, and pydocstyle workflows defined in this repository.
+- **Example use:**
+
+    ```yaml
+    jobs:
+        static-analysis:
+            name: Python Static Code Analysis
+            uses: lizzieprader/gh_workflows_static_analysis/.github/workflows/python.yml@main
+            with:
+                python-version: 3.13
+    ```
 
 ### Pylint
 
